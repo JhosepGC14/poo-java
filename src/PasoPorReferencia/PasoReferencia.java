@@ -12,13 +12,19 @@ public class PasoReferencia {
 
     System.out.println("Persona 1 nombre : " + persona1.name);
 
-    cambiarValor(persona1);
+    persona1 = cambiarValor(persona1);
 
     System.out.println("Persona 1 cambio nombre : " + persona1.name);
 
   }
 
-  public static void cambiarValor(Persona personaArg) {
-    personaArg.name = "Geyvi";
+  public static Persona cambiarValor(Persona personaArg) {
+    if (personaArg == null) {
+      System.out.println("Valor de persona invalido : null");
+      return null;
+    } else {
+      personaArg.name = "Geyvi";
+      return personaArg;
+    }
   }
 }

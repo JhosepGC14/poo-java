@@ -29,5 +29,6 @@ class Imprimir {
   public void imprimir(Celular celuarArgs) {
     System.out.println("\nCelular desde imprimir : " + celuarArgs);
     System.out.println("Impresion del objeto actual (this) : " + this);
+
   }
 }
